@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+@media (max-width: 440px){
+    html {
+        font-size: 18px;
+    }
+}
+
+body {
+    background-image: url(fondo-acuarela-pintada-mano-forma-cielo-nubes.jpg);
+    font-family: 'Roboto', sans-serif;
+    color: darkgray
+}
+
+header {
+    background-color: antiquewhite;
+    box-shadow: 1.5px 1.5px 4px black;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+header img {
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+}
+
+header h1 {
+    color: darkgray;
+    text-align: center;
+    font-style: italic;
+}
+
+header nav a {
+    color: darkcyan;
+    text-decoration: none;
+    font-weight: normal;
+    margin-left: 1em;
+    transition: 100ms ease-in-out;
+}
+
+header nav a:hover, .estudios a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    box-shadow: 2px 2px 4px gray;
+    padding: 20px;
+    position: fixed;
+    top: 50px;
+    left: 40px;
+    color: black;
+}
+
+table:hover, .perfil:hover {
+    box-shadow: 4px 4px 6px black;
+    padding: 20px;
+}
+
+th {
+    background-color: antiquewhite;
+    color: black;
+    font-size: 22px;
+    padding: 10px;
+    width: auto;
+}
+
+tr:hover, tr:nth-child(even):hover {
+    background-color:yellow;
+}
+
+td:nth-child(1) {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color:lightseagreen;
+}
+
+th img {
+    width: 30px;
+    height: auto;
+    position: relative;
+    top: 5px
+}
+
+.perfil {    
+    margin: 40px auto;
+    padding: 20px;
+    position: fixed;
+    text-align: right;
+    top: 30px;
+    right: -10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.info_perfil {
+    margin: 40px auto;
+    padding: 20px;
+    position: fixed;
+    top: 360px;
+    right: 5px;
+    color: black;
+    font-size: 12px auto;
+    font-style: italic;
+}
+
+footer {
+    margin: 50px auto;
+    box-shadow: 2px 2px 4px gray;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    left: 40px;
+    color: black;
+
+}
+
+footer:hover {
+    box-shadow: 4px 4px 6px black;
+    padding: 10px;
+}
+
+.estudios h1, .exp_lab h1, .contacto h1, form {
+    position: relative;
+    top: 100px;
+    left: 10px;
+    color: black;
+    font-size:larger;
+}
+
+.estudios p, .exp_lab p, .soft_skills, .hobbies, .contacto p, form {
+    position: relative;
+    top: 100px;
+    left: 30px;
+    color: darkblue;
+    font-size:large;
+    list-style-type: disc;
+}
+
+iframe {
+    position: relative;
+    top: 80px;
+    margin: 20px;
+}
+
+form input, textarea {
+    width: 250px;
+}
